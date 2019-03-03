@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    
-    <title>jQuery template</title>
-   <script
-   src="https://code.jquery.com/jquery-3.3.1.js"></script>
- 
- <script> //custom
-     $(function(){
-        $('button').click(function(){
-          /*  var name = $('#name').val();
-            var language = 
-            var */
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <title>Business Card Generator</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        //custom
+        $(function() {
+            $('button').click(function() {
+                var name = $('#name').val();
+                var language = $('#language').val();
+                var talent = $('talent').val();
+                var email = $('#email').val();
+                var school = $('#school').val();
+                var job = $('job').val();
+                var phoneNumber = $('#phoneNumber').val();
+                var age = $('#age').val();
+
+                var Q = "Name: " + name;
+                var Q2 = "I speak: " + language;
+                var Q3 = "My talents are: " + talent;
+                var Q4 = "I attended: " + school;
+                var Q5 = "Email: " + email;
+                var Q6 = "Job: " + job;
+                var Q7 = "Phone Number: " + phoneNumber;
+                var Q8 = "Age: " + age;
+                $("button").click(function() {
+                    $("p1").html(Q)
+                    $("p8").html(Q2)
+                    $("p2").html(Q3)
+                    $("p3").html(Q4)
+                    $("p4").html(Q5)
+                    $("p5").html(Q6)
+                    $("p6").html(Q7)
+                    $("p7").html(Q8)
+
+                });
+            });
         });
-     });
- </script>
-  </head>
-  <body>
-  
-  </body>
-  <h1>This is my Business Card Generator!</h1>
-  What business do you work for? <input id="name">
-  <br>What is your full name? <input id="name">
-  <br>When is your birthday? <input id="bday">
-  <br>How old are you? <input id="age">
-  <br>How tall are you? <input id="height">
-  <br>Where are you from? <input id="origin">
-  <br>What school or college did you attend? <input id="education">
-  <br>Do you speak any other languages? <input id="language">
+    </script>
+</head>
+<style>
+    #info{
+        height: 500px;
+        width: 900px;
+    }
+    *{
+        font-family: "Zcool QingKe HuangYou";
+    }
+    body {
+        font-size: 20px;
+    }
+    button {
+        font-size: 40px;
+    }
+    p9 {
+        float: right;
+    }
+</style>
+
+<body>
+
+</body>
+<h1>Business Card Generator!</h1>
+What is your name? <input id="name">
+<br>What languages do you speak? <input id="language">
+<br>What is your age? <input id="age">
+<br>What are some talents you have or things you are good at? <input id="talen">
+<br>What school or college do you got to? <input id="school">
+<br>What is your job? <input id="job">
+<br>What is your email address? <input id="email">
+<br>What is your phone number? <input id="phoneNumber">
+ 
+<br><button>GENERATE!</button>
+<div id=picture>
+    <p9></p9>
+    <div id=info>
+
+        <p1></p1>
+        <br>
+        <br>
+        <p7></p7>
+        <br>
+        <br>
+        <p4></p4>
+        <br>
+        <br>
+        <p6></p6>
+        <br>
+        <br>
+        <p3></p3>
+        <br>
+        <br>
+        <p8></p8>
+        <br>
+        <br>
+        <p5></p5>
+        <br>
+        <br>
+        <p2></p2>
+        <br>
+        <br>
+
+
+
+
+
 </html>
